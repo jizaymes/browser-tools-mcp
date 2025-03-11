@@ -7,15 +7,20 @@
     "activeTab",
     "storage",
     "tabs",
-    "debugger",
-    "tabCapture",
-    "windows"
-  ],
-  "manifest_version": 3,
-  "host_permissions": [
+    "webRequest",
     "<all_urls>"
   ],
+  "manifest_version": 2,
   "background": {
-    "service_worker": "background.js"
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "browsertools-mcp@agentdesk.ai",
+      "strict_min_version": "60.0"
+    }
   }
 }

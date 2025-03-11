@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "permissions": [
+    "webRequest",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "browsertools-mcp@agentdesk.ai",
+      "strict_min_version": "60.0"
+    }
+  }
+}

@@ -6,16 +6,6 @@
   "permissions": [
     "activeTab",
     "storage",
-    "tabs",
-    "debugger",
-    "tabCapture",
-    "windows"
-  ],
-  "manifest_version": 3,
-  "host_permissions": [
-    "<all_urls>"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  }
+    "tabs"
+  ]
 }
